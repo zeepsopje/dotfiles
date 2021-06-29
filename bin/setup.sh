@@ -14,5 +14,5 @@ ln -sf ../config/tmux.conf ~/.tmux.conf
 echo "Symlinking vim plugins..."
 [ ! -d "~/.local/share/nvim/site/start" ] && mkdir -p ~/.local/share/nvim/site/start
 [ ! -d "~/.local/share/nvim/site/opt" ] && mkdir -p ~/.local/share/nvim/site/opt
-ln -sf ../nvim-plugins/start ~/.local/share/nvim/start
-ln -sf ../nvim-plugins/opt ~/.local/share/nvim/opt
+ln -sf ../nvim-plugins/start ~/.local/share/nvim/site/start
+ln -sf ../nvim-plugins/opt ~/.local/share/nvim/site/opt
