@@ -4,7 +4,7 @@
 sudo -v
 
 echo "Installing packages..."
-sudo apt install i3wm neovim tmux git curl fzf
+sudo apt install i3 neovim tmux git curl fzf
 
 echo "Symlinking config files..."
 [ ! -d "~/.config/nvim" ] && mkdir -p ~/.config/nvim
