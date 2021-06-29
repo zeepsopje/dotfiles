@@ -10,6 +10,7 @@ sudo -v
 sudo apt install curl
 
 NVIM_PLUGIN_DIR="$HOME/.local/share/nvim/site/pack/plugin"
+NVIM_COLOR_DIR="$HOME/.config/nvim/colors"
 
 echo "Updating repositories..."
 # NodeJS
@@ -24,14 +25,23 @@ sudo apt install $PACKAGES
 
 echo "Symlinking config files..."
 [ ! -d "~/.config/nvim" ] && mkdir -p ~/.config/nvim
-ln -sf $(pwd)/../config/init.vim ~/.config/nvim/init.vim
-ln -sf $(pwd)/../config/tmux.conf ~/.tmux.conf
-ln -sf $(pwd)/../config/xprofile ~/.xprofile
+ln -sf $(pwd)/../nvim/config.vim ~/.config/nvim/init.vim
+ln -sf $(pwd)/../tmux/config.conf ~/.tmux.conf
+ln -sf $(pwd)/../system/xprofile ~/.xprofile
 
 echo "Symlinking neovim plugins..."
-[[ ! -d $NVIM_PLUGIN_DIR ]] && mkdir -p $NVIM_PLUGIN_DIR
-[[ ! -d $NVIM_PLUGIN_DIR ]] && mkdir -p $NVIM_PLUGIN_DIR
-ln -sf $(pwd)/../nvim-plugins/start $NVIM_PLUGIN_DIR/
-ln -sf $(pwd)/../nvim-plugins/opt $NVIM_PLUGIN_DIR/
+[[ ! -d ~/.local/share/nvim/site/pack/plugin ]] && mkdir -p ~/.local/share/nvim/site/pack/plugin
+[[ ! -d ~/.local/share/nvim/site/pack/plugin ]] && mkdir -p ~/.local/share/nvim/site/pack/plugin
+ln -sf $(pwd)/../nvim/plugins/start ~/.local/share/nvim/site/pack/plugin/
+ln -sf $(pwd)/../nvim/plugins/opt ~/.local/share/nvim/site/pack/plugin/
+
+echo "Symlinking neovim colorschemes..."
+[[ ! -d /.config/nvim/colors ]] && mkdir -p /.config/nvim/colors
+ln -sf $(pwd)/../nvim/colors/* /.config/nvim/colors/
+
+echo "Setting up rofi..."
+[[ ! -d ~/.config/rofi ]] && mkdir -p ~/.config/rofi
+[[ ! -d /usr/share/rofi/themes ]] && sudo mkdir -p /usr/share/rofi/themes
+ln -sf $(pwd)/../rofi/themes/* /usr/share/rofi/themes
 
 source ~/.xprofile

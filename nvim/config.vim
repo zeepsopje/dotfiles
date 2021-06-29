@@ -1,6 +1,11 @@
 set nocompatible
 set number
 
+" appearance
+""" Theme
+colorscheme PaperColor
+set background=dark
+
 " configuration
 """ easy sourcing
 map <C-a> :source ~/.config/nvim/init.vim
