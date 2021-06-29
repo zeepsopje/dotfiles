@@ -29,7 +29,6 @@ ln -sf $(pwd)/../config/tmux.conf ~/.tmux.conf
 ln -sf $(pwd)/../config/xprofile ~/.xprofile
 
 echo "Symlinking neovim plugins..."
-echo "Checking if $NVIM_PLUGIN_DIR/[start/opt] exists"
 [[ ! -d $NVIM_PLUGIN_DIR ]] && mkdir -p $NVIM_PLUGIN_DIR
 [[ ! -d $NVIM_PLUGIN_DIR ]] && mkdir -p $NVIM_PLUGIN_DIR
 ln -sf $(pwd)/../nvim-plugins/start $NVIM_PLUGIN_DIR/
