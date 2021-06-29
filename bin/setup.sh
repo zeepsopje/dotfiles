@@ -3,6 +3,8 @@
 # Ask for permissions up-front.
 sudo -v
 
+NVIM_PLUGIN_DIR = "~/.local/share/nvim/site/pack/plugin"
+
 echo "Installing packages..."
 sudo apt install i3 neovim tmux git curl fzf
 
@@ -11,8 +13,9 @@ echo "Symlinking config files..."
 ln -sf ../config/init.vim ~/.config/nvim/init.vim
 ln -sf ../config/tmux.conf ~/.tmux.conf
 
-echo "Symlinking vim plugins..."
-[ ! -d "~/.local/share/nvim/site/start" ] && mkdir -p ~/.local/share/nvim/site/start
-[ ! -d "~/.local/share/nvim/site/opt" ] && mkdir -p ~/.local/share/nvim/site/opt
-ln -sf ../nvim-plugins/start ~/.local/share/nvim/site/start
-ln -sf ../nvim-plugins/opt ~/.local/share/nvim/site/opt
+echo "Symlinking neovim plugins..."
+[ ! -d "${NVIM_PLUGIN_DIR}/start" ] && mkdir -p $NVIM_PLUGIN_DIR/start
+[ ! -d "${NVIM_PLUGIN_DIR}/opt" ] && mkdir -p $NVIM_PLUGIN_DIR/opt
+ln -sf $(pwd)/nvim-plugins/start $NVIM_PLUGIN_DIR/start
+ln -sf $(pwd)/nvim-plugins/opt $NVIM_PLUGIN_DIR/opt
+
