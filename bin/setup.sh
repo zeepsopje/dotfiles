@@ -3,7 +3,7 @@
 # Ask for permissions up-front.
 sudo -v
 
-NVIM_PLUGIN_DIR = "~/.local/share/nvim/site/pack/plugin"
+NVIM_PLUGIN_DIR="~/.local/share/nvim/site/pack/plugin"
 
 echo "Installing packages..."
 sudo apt install i3 neovim tmux git curl fzf
