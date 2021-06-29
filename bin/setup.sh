@@ -11,7 +11,7 @@ NVIM_PLUGIN_DIR="$HOME/.local/share/nvim/site/pack/plugin"
 echo "Updating repositories..."
 # NodeJS
 curl https://deb.nodesource.com/setup_14.x > nodejs.sh
-bash nodejs.sh
+sudo bash nodejs.sh
 sudo apt update
 rm nodejs.sh
 
