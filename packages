@@ -1,5 +1,10 @@
+i3
 tmux
+rofi
+qutebrowser
+zsh
+xclip
 nodejs
-npm
 neovim
 fzf
+python
