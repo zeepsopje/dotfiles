@@ -3,12 +3,17 @@
 # Ask for permissions up-front.
 sudo -v
 
+# Install necessary packages first
+sudo apt install curl
+
 NVIM_PLUGIN_DIR="$HOME/.local/share/nvim/site/pack/plugin"
 
 echo "Updating repositories..."
 # NodeJS
-sudo curl https://deb.nodesource.com/setup_14.x | bash
+curl https://deb.nodesource.com/setup_14.x > nodejs.sh
+bash nodejs.sh
 sudo apt update
+rm nodejs.sh
 
 echo "Installing packages..."
 PACKAGES=$(cat ../packages | awk '{print}' ORS=' ')
