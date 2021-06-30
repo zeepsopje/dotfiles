@@ -44,4 +44,8 @@ echo "Setting up rofi..."
 [[ ! -d /usr/share/rofi/themes ]] && sudo mkdir -p /usr/share/rofi/themes
 ln -sf $(pwd)/../rofi/themes/* /usr/share/rofi/themes
 
+echo "Setting up i3..."
+[[ ! -d ~/.config/i3 ]] && mkdir -p ~/.config/i3
+ln -sf $(pwd)/../i3/config ~/.config/i3
+
 source ~/.xprofile
