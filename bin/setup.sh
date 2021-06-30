@@ -47,5 +47,9 @@ ln -sf $(pwd)/../rofi/themes/* /usr/share/rofi/themes
 echo "Setting up i3..."
 [[ ! -d ~/.config/i3 ]] && mkdir -p ~/.config/i3
 ln -sf $(pwd)/../i3/config ~/.config/i3
+i3 --replace
+
+echo "Setting up Oh My Zsh..."
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 source ~/.xprofile
