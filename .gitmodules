@@ -4,3 +4,6 @@
 [submodule "nvim/plugins/start/fzf.vim"]
 	path = nvim/plugins/start/fzf.vim
 	url = git@github.com:junegunn/fzf.vim
+[submodule "nvim/plugins/start/vim-svelte"]
+	path = nvim/plugins/start/vim-svelte
+	url = git@github.com:evanleck/vim-svelte
