@@ -1,1 +1,6 @@
 xset r rate 190 35
+
+xrandr --output DP-1 --rotate left
+xrandr --output HDMI-0 --rotate right
+
+feh --bg-fill https://wallpapercave.com/wp/wp6256946.jpg
