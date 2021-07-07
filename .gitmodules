@@ -7,3 +7,9 @@
 [submodule "nvim/plugins/start/vim-svelte"]
 	path = nvim/plugins/start/vim-svelte
 	url = git@github.com:evanleck/vim-svelte
+[submodule "nvim/plugins/start/emmet-vim"]
+	path = nvim/plugins/start/emmet-vim
+	url = git@github.com:mattn/emmet-vim
+[submodule "nvim/plugins/start/vim-javascript"]
+	path = nvim/plugins/start/vim-javascript
+	url = git@github.com:pangloss/vim-javascript
