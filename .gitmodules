@@ -16,3 +16,6 @@
 [submodule "nvim/plugins/start/lightline.vim"]
 	path = nvim/plugins/start/lightline.vim
 	url = git@github.com:itchyny/lightline.vim
+[submodule "nvim/plugins/start/vim-sleuth"]
+	path = nvim/plugins/start/vim-sleuth
+	url = git@github.com:tpope/vim-sleuth
