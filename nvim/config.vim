@@ -2,12 +2,13 @@ set nocompatible
 set nowrap
 set number
 set autoindent
-set tabstop=4
-set shiftwidth=4
+set filetype
+set tabstop=2
+set shiftwidth=2
 noh
 
-let loaded_matchparen=1
 let mapleader=","
+let g:loaded_matchparen=1
 
 " appearance
 """ Theme
@@ -22,9 +23,10 @@ command! Config e ~/.config/nvim/init.vim
 
 " fzf
 map <C-p> :Files <Enter>
+map <C-g> :GFiles <Enter>
 map <C-f> :Rg <Enter>
 set runtimepath^=~/.fzf
 set runtimepath^=~/.local/share/nvim/site/start/fzf.vim
 
 " emmet
-let g:user_emmet_leader_key=','
+let g:user_emmet_leader_key=","

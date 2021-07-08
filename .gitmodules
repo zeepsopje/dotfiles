@@ -1,3 +1,18 @@
 [submodule "nvim-plugins/start/coc.nvim"]
 	path = nvim-plugins/start/coc.nvim
 	url = https://github.com/neoclide/coc.nvim
+[submodule "nvim/plugins/start/fzf.vim"]
+	path = nvim/plugins/start/fzf.vim
+	url = git@github.com:junegunn/fzf.vim
+[submodule "nvim/plugins/start/vim-svelte"]
+	path = nvim/plugins/start/vim-svelte
+	url = git@github.com:evanleck/vim-svelte
+[submodule "nvim/plugins/start/emmet-vim"]
+	path = nvim/plugins/start/emmet-vim
+	url = git@github.com:mattn/emmet-vim
+[submodule "nvim/plugins/start/vim-javascript"]
+	path = nvim/plugins/start/vim-javascript
+	url = git@github.com:pangloss/vim-javascript
+[submodule "nvim/plugins/start/lightline.vim"]
+	path = nvim/plugins/start/lightline.vim
+	url = git@github.com:itchyny/lightline.vim
