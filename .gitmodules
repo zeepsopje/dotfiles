@@ -19,3 +19,6 @@
 [submodule "nvim/plugins/start/vim-sleuth"]
 	path = nvim/plugins/start/vim-sleuth
 	url = git@github.com:tpope/vim-sleuth
+[submodule "nvim/plugins/start/vim-airline-themes"]
+	path = nvim/plugins/start/vim-airline-themes
+	url = git@github.com:vim-airline/vim-airline-themes

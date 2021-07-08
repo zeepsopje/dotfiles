@@ -12,7 +12,7 @@ let g:loaded_matchparen=1
 
 " appearance
 """ Theme
-colorscheme PaperColor
+colorscheme solarized
 set background=dark
 
 " configuration
